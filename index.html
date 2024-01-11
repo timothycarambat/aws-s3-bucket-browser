@@ -25,8 +25,8 @@
       //   * https://s3.BUCKET-REGION.amazonaws.com/BUCKET-NAME
       //   * https://storage.googleapis.com/BUCKET-NAME
       //   The URL should return an XML document with <ListBucketResult> as root element.
-      rootPrefix: 'desktop/', // e.g. 'subfolder/'
-      keyExcludePatterns: [/^index\.html$/], // matches againt object key relative to rootPrefix
+      rootPrefix: undefined, // e.g. 'subfolder/'
+      keyExcludePatterns: [/^index\.html$/], // matches against object key relative to rootPrefix
       pageSize: 50,
 
       bucketMaskUrl: undefined,
